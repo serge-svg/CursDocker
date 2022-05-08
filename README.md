@@ -1,2 +1,46 @@
-# CursDocker
- Sessió online BCN Activa
+# Introducció a Docker
+
+## Sessió online BCN Activa
+
+### Primera sessió
+
+* Instal·lar Docker:
+  * [Instal·ar WSL](https://docs.microsoft.com/en-us/windows/wsl/install)
+  * [Instal·lar actualizació de Kernel de Linux](https://docs.microsoft.com/es-es/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package)
+  * [Instal·lar Docker Desktop en Windows](https://docs.docker.com/desktop/windows/install/)
+
+* Hello World en Docker `docker run hello-world`
+
+* Comandes bàsiques:
+  * `docker ps`
+  * `docker run`
+  * `docker rm`
+  * `docker logs`
+  * `docker exec`
+
+* Eines i utilitats:
+  * Visual Code: [Visual Code](https://code.visualstudio.com/)
+  * Azure Data Studio: [Azure Data Studio](https://azuredatastudio.net/)
+
+### Segona sessió
+
+* Persistència de les dades:
+  * Muntatge carpetes locals
+  * Volums
+
+* Exemples entorns d'execució:
+  * Usant SQL Server a un contenidor
+  * Exemple codi Java
+
+* Arxiu Dockerfile
+
+* Treballant amb registres de contendidors
+  * Docker Hub
+  * Altres alternatives: Azure Container Registry
+
+* Docker-compose
+  * Desplegant solucions amb múltiples contenidors
+
+* Orquestració de contenidors
+  * Docker Swarm
+  * Kubernetes
