@@ -1,10 +1,3 @@
-# Docker Compose amb un sol contenidor
-
-Docker compose simplifica la creació de contenidors al permetre configurar de forma senzilla paràmetres i variables d'entorn.
-
-Exemple amb SQL Server:
-
-```docker-compose.yml
 version: "3.5"
 services:
   sqlserver:
@@ -19,5 +12,3 @@ services:
       MSSQL_PID: Express
     volumes:
       - sqlserver-data:/var/opt/mssql
-````
-
