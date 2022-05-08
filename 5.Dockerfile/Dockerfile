@@ -1,7 +1,7 @@
 #FROM is the base image for which we will run our application
 FROM nginx:latest
 # Copy files and directories from the application
-COPY hmtl/index.html /usr/share/nginx/html
+COPY html/index.html /usr/share/nginx/html
 COPY html/favicon.ico /usr/share/nginx/html
 COPY html/Rakefile /usr/share/nginx/html
 COPY html/style/ /usr/share/nginx/html/style/
