@@ -51,5 +51,5 @@
   * Kubernetes
 
 * Desplegant contenidors al cloud
-  * Solucions disponibles a Azure
-  * OpenShift 
+  * Azure
+  * AWS 
