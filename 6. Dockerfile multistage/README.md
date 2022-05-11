@@ -1,6 +1,4 @@
-# Contenidor aplicació consola Java
-
-## Autobuild
+# Contenidor aplicació consola Java multistage
 
 Exemple de com dockeritzar una aplicació senzilla de Java per consola
 
@@ -51,12 +49,19 @@ public class Main
 Descripció del Dockerfile
 
 ```Dockerfile
-  FROM openjdk:latest
-  COPY . /usr/src/myapp
-  WORKDIR /usr/src/myapp
-  RUN javac Main.java
-  ENTRYPOINT [ "java","Main"]
-  CMD ["5"]
+  FROM openjdk:latest AS BUILDER
+COPY . /usr/src/myapp
+WORKDIR /usr/src/myapp
+RUN javac Main.java
+
+FROM openjdk:latest 
+RUN mkdir /code
+WORKDIR /code
+COPY --from=BUILDER /usr/src/myapp/Main.class .
+VOLUME /code
+ENTRYPOINT [ "java","Main"]
+CMD ["10"]
+
 ```
 
 > FROM: Usem com imatge base la darrera de openjdk.
