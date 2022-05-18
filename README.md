@@ -43,8 +43,13 @@
   * Altres alternatives: Azure Container Registry
 
 * Docker-compose
+  * Solució amb un sol contenidor
   * Desplegant solucions amb múltiples contenidors
 
 * Orquestració de contenidors
   * Docker Swarm
   * Kubernetes
+
+* Desplegant contenidors al cloud
+  * Azure
+  * AWS 
