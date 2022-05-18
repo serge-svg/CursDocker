@@ -1,4 +1,4 @@
-version: "3.5"
+version: "3.8"
 services:
   sqlserver:
     image: mcr.microsoft.com/mssql/server:2019-CU15-ubuntu-20.04
@@ -8,7 +8,17 @@ services:
       - 1433:1433
     environment:
       ACCEPT_EULA: Y
-      SA_PASSWORD: PasswordO1.
+      SA_PASSWORD: SQL_SA_PASSWORD
       MSSQL_PID: Express
     volumes:
       - sqlserver-data:/var/opt/mssql
+    secrets:
+      - SQL_SA_PASSWORD
+
+secrets:
+  SQL_SA_PASSWORD: 
+    file: ./secrets/dba_password
+
+volumes:
+  sqlserver-data:
+    
