@@ -4,10 +4,7 @@
 
 ![Docker logo](https://logos-marcas.com/wp-content/uploads/2021/03/Docker-Logo.png)
 
-## Barcelona ACtiva
-
 <!-- insert BCN Activa logo here -->
-
 
 ### Primera sessió
 
