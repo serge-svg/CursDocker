@@ -4,7 +4,10 @@
 
 ![Docker logo](https://logos-marcas.com/wp-content/uploads/2021/03/Docker-Logo.png)
 
-## Sessió online BCN Activa
+## Barcelona ACtiva
+
+<!-- insert BCN Activa logo here -->
+
 
 ### Primera sessió
 
