@@ -44,6 +44,10 @@
 
 ### Tercera sessió
 
+* Xarxes en docker
+  * Tipus de xarxes
+  * Exemples
+
 * Docker-compose
   * Solució amb un sol contenidor
   * Desplegant solucions amb múltiples contenidors
