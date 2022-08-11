@@ -42,6 +42,8 @@
   * Docker Hub
   * Altres alternatives: Azure Container Registry
 
+### Tercera sessió
+
 * Docker-compose
   * Solució amb un sol contenidor
   * Desplegant solucions amb múltiples contenidors
