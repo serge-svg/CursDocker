@@ -5,12 +5,10 @@ Docker compose simplifica la creació de contenidors al permetre configurar de f
 Exemple amb SQL Server:
 
 ```docker-compose.yml
-version: "3.5"
+version: "3.9"
 services:
   sqlserver:
-    image: mcr.microsoft.com/mssql/server:2019-CU15-ubuntu-20.04
-    user: '0:0'
-    container_name: sqlserver2019
+    image: mcr.microsoft.com/mssql/server:2019-latest
     ports:
       - 1433:1433
     environment:
@@ -19,5 +17,6 @@ services:
       MSSQL_PID: Express
     volumes:
       - sqlserver-data:/var/opt/mssql
-````
-
+volume:
+  sqlserver-data:
+```
