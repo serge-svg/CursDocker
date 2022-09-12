@@ -1,24 +1,14 @@
-version: "3.8"
+version: "3.9"
 services:
-  sqlserver:
-    image: mcr.microsoft.com/mssql/server:2019-CU15-ubuntu-20.04
-    user: '0:0'
+  db:
+    image: mcr.microsoft.com/mssql/server:2019-latest
     container_name: sqlserver2019
-    ports:
-      - 1433:1433
     environment:
-      ACCEPT_EULA: Y
-      SA_PASSWORD: SQL_SA_PASSWORD
-      MSSQL_PID: Express
+      - ACCEPT_EULA:Y
+      - SA_PASSWORD:Password2022
+    ports:
+      - "1433:1433"
     volumes:
-      - sqlserver-data:/var/opt/mssql
-    secrets:
-      - SQL_SA_PASSWORD
-
-secrets:
-  SQL_SA_PASSWORD: 
-    file: ./secrets/dba_password
-
+      - sqlserver2019:/var/opt/mssql
 volumes:
-  sqlserver-data:
-    
+    sqlserver2019:  
