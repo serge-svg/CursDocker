@@ -9,3 +9,10 @@ Procediment:
 ``` language=bash
 docker run -it --rm -v $(pwd)/html:/usr/share/nginx/html -p 80:80 nginx
 ```
+o per PowerShell a Windows
+
+``` language=bash
+docker run -it --rm -v ${pwd}/html:/usr/share/nginx/html -p 80:80 nginx
+```
+
+
